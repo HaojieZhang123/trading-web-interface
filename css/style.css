@@ -3,3 +3,175 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/***************/
+/* Page layout */
+/***************/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: grey;
+}
+
+#main{
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    overflow-y: auto;
+    background-color: green;
+}
+
+header{
+    height: 75px;
+    background-color: paleturquoise;
+    position: sticky;
+    top: 0;
+}
+
+/****************/
+/* General tags */
+/****************/
+
+/****************************/
+/* Flexbox and layout utils */
+/****************************/
+.d-flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-left{
+    justify-content: left;
+}
+.justify-right{
+    justify-content: right;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.align-center{
+    align-items: center;
+    align-content: center;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+/**************/
+/* Containers */
+/**************/
+/* SIDEBAR */
+/* logo */
+#logo, #mini-logo, #logo img, #small-logo img{
+    width: 100%;
+}
+/* summary */
+#summary li{
+    display: flex;
+    justify-content: space-between;
+}
+/* user panel */
+.sidebar-panel-container{
+    border-left: 0.5px solid black;
+}
+#side-panel-list li{
+    display: flex;
+    align-items: center;
+}
+
+/* homepage settings */
+#homepage-settings-list li{
+    display: flex;
+    align-items: center;
+}
+
+.home-setting-logo img{
+    width: 50%;
+}
+
+/* HEADER */
+
+#user-buttons{
+    display: flex;
+}
+
+#mini-watchlist{
+    display: flex;
+    font-size: 10px;
+}
+
+/* Elements */
+.square-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-watchlist-box{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100px;
+}
+.mini-watchlist-box>div{
+    border-left: 3px solid black;
+    padding-left: 5px;
+}
+
+/*****************************/
+/* Colors and text-formating */
+/*****************************/
+.bg-white{
+    background-color: white;
+}
+.bg-grey{
+    background-color: #F5F4F9;
+}
+
+.white-text{
+    color: white;
+}
+.black-text{
+    color: black;
+}
+.green-text{
+    color: #70C85D;
+}
+.red-text{
+    color: red;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+
+/*****************/
+/* Media queries */
+/*****************/

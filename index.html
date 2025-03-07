@@ -8,6 +8,204 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="container" class="d-flex">
+
+        <!-- sidebar -->
+        <div id="sidebar">
+
+            <!-- logo -->
+            <div id="logo">
+                <img src="./img/Trade_Republic_logo_2021.svg.png" alt="">
+            </div>
+            <div id="small-logo">
+                <img src="./img/traderepublic-small-logo-black.png" alt="">
+            </div>
+
+            <!-- summary -->
+            <div id="summary">
+                <ul>
+
+                    <li>
+                        <div class="summary-name">Portfolio value</div>
+                        <div class="summary-value">$ 15,894.43</div>
+                    </li>
+                    <li>
+                        <div class="summary-name">Deposit</div>
+                        <div class="summary-value">$ 3,000.00</div>
+                    </li>
+                    <li>
+                        <div class="summary-name">Income</div>
+                        <div class="summary-value">$ 2,544.40</div>
+                    </li>
+                    <li>
+                        <div class="summary-name">Cash balance</div>
+                        <div class="summary-value">$ 10,350.03</div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- user panel -->
+            <div id="user-panel">
+
+                <div>User Panel</div>
+                <div class="sidebar-panel-container">
+                    <ul id="side-panel-list">
+
+                        <li>
+                            <div class="panel-logo square-button">
+                                <i class="fa-solid fa-table-columns"></i>
+                            </div>
+                            <div class="panel-name">Dashboard</div>
+                        </li>
+                        <li>
+                            <div class="panel-logo square-button">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="panel-name">Portfolio</div>
+                        </li>
+                        <li>
+                            <div class="panel-logo square-button">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div class="panel-name">Trading & Market</div>
+                        </li>
+                        <li>
+                            <div class="panel-logo square-button">
+                                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                            </div>
+                            <div class="panel-name">Research Portal</div>
+                        </li>
+                        <li>
+                            <div class="panel-logo square-button">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                            <div class="panel-name">News Portal</div>
+                        </li>
+                        <li>
+                            <div class="panel-logo square-button">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+                            <div class="panel-name">Wallet Transfer</div>
+                        </li>
+                        <li>
+                            <div class="panel-logo square-button">
+                                <i class="fa-solid fa-file-invoice"></i>
+                            </div>
+                            <div class="panel-name">Reporting & Transactions</div>
+                        </li>
+                        <li>
+                            <div class="panel-logo square-button">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                            <div class="panel-name">Education/Learn/Tutorial</div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- homepage settings -->
+            <div id="homepage-settings">
+
+                <ul id="homepage-settings-list">
+
+                    Homepage
+                    <li>
+                        <div class="home-setting-logo square-button">
+                            <img src="./img/traderepublic-small-logo-black.png" alt="">
+                        </div>
+                        <div class="home-setting-name">Trade Republic</div>
+                    </li>
+                    <li>
+                        <div class="home-setting-logo square-button">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </div>
+                        <div class="home-setting-name">FAQ</div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        
+        <!-- main -->
+        <div id="main">
+
+            <!-- header -->
+            <header class="d-flex justify-between">
+
+                <div class="left-header d-flex align-center">
+
+                    <div>Markets</div>
     
+                    <div id="mini-watchlist">
+                        <div class="mini-watchlist-box">
+                            <div>
+                                EQUITIES
+                                <div class="bold d-flex justify-between"><span>AAPL</span> <span>238.16</span></div>
+                                <div class="green-text text-right">+2.80</div>
+                            </div>
+                        </div>
+
+                        <div class="mini-watchlist-box">
+                            <div>
+                                FOREX
+                                <div class="bold d-flex justify-between"><span>USD/EUR</span> <span>0.9202</span></div>
+                                <div class="red-text text-right">-0.69</div>
+                            </div>
+                        </div>
+
+                        <div class="mini-watchlist-box">
+                            <div>
+                                CRYPTO
+                                <div class="bold d-flex justify-between"><span>BTC</span> <span>83,289.76</span></div>
+                                <div class="red-text text-right">-0.14</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="right-header d-flex align-center">
+
+                    <div id="user-buttons">
+                        <div class="square-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="square-button">
+                            <i class="fa-regular fa-comments"></i>
+                        </div>
+                        <div class="square-button">
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="square-button">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                    </div>
+    
+                    <div id="profile">
+                        Username <i class="fa-solid fa-angle-down"></i>
+                    </div>
+    
+                    <div id="dark-mode">
+                        <i class="fa-solid fa-toggle-off"></i>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="action-graphs"></div>
+
+            <div class="watchlist"></div>
+
+            <div class="funds-graphs"></div>
+
+        </div>
+
+    </div>
 </body>
 </html>
