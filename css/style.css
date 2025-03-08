@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA;
 }
 /***************/
 /* Page layout */
@@ -28,13 +29,18 @@ body{
 #main{
     margin-left: 250px;
     width: calc(100% - 250px);
-    overflow-y: auto;
 }
 
 header{
     height: 100px;
     position: sticky;
     top: 0;
+    background: linear-gradient( #FAFAFA, #FAFAFA, transparent);
+}
+
+.main-content{
+    width: 100%;
+    overflow-y: auto;
 }
 
 .content{
@@ -44,6 +50,10 @@ header{
 /****************/
 /* General tags */
 /****************/
+
+ul{
+    list-style-type: none;
+}
 
 /****************************/
 /* Flexbox and layout utils */
@@ -69,6 +79,13 @@ header{
 .align-center{
     align-items: center;
     align-content: center;
+}
+.stretch{
+    align-items: stretch;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
 }
 
 .inline-block{
@@ -159,7 +176,9 @@ header{
     align-items: center;
     font-size: 30px;
 }
+/************/
 /* Elements */
+/************/
 .square-button{
     width: 30px;
     height: 30px;
@@ -169,7 +188,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-
+/* header elements */
 .mini-watchlist-box{
     border-radius: 10px;
     padding: 5px;
@@ -182,6 +201,7 @@ header{
     padding-left: 5px;
 }
 
+/* graph cards elements */
 .card{
     border-radius: 10px;
 }
@@ -210,6 +230,7 @@ header{
     width: 90%;
 }
 
+/* watchlist elements */
 .angle-left, .angle-right{
     width: 50px;
     font-size: 25px;
@@ -223,6 +244,78 @@ header{
 .watchlist-item{
     border-left: 0.5px solid #CCC;
 }
+
+/* Big graph elements */
+/* labels */
+#funds-graphs{
+    width: 100%;
+}
+#labels{
+    width: 100%;
+}
+.label{
+    padding: 20px 15px;
+    background-color: #EEE;
+    border-radius: 10px 10px 0 0;
+}
+/* graphs */
+#graphs{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0 0 5px 5px rgba(100, 100, 100, 0.1);
+    position: relative;
+    z-index: 1;
+}
+.search-box{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.search-box input{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    background-color: #EEE;
+    border-radius: 10px;
+}
+.line-chart{
+    width: 63%;
+    padding: 20px;
+    border: 1px solid #CCC;
+    margin-right: 2%;
+}
+.line-chart h3{
+    padding: 10px 0;
+}
+.line-chart img{
+    width: 100%;
+}
+.pie-chart{
+    width: 35%;
+    padding: 20px;
+    border: 1px solid #CCC;
+}
+.pie-chart h3{
+    padding: 10px 0;
+}
+.pie-chart img{
+    width: 100%;
+}
+
+.pie-chart li{
+    padding-left: 1.3em;
+    margin: 10px 0;
+}
+.pie-chart li::before{
+    content: "\2022";
+    color: #904CC9;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
 
 
 /*****************************/
@@ -271,6 +364,15 @@ header{
     border-left: 1px solid black;
 }
 
+.selected-label{
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    background-color: white;
+    font-weight: 600;
+    box-shadow: 0px 0px 5px 5px rgba(100, 100, 100, 0.1);
+}
+
 /**************/
 /* Animations */
 /**************/
@@ -282,7 +384,7 @@ header{
 }
 .mini-watchlist-box:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.3s ease-in-out;
 }
 #user-buttons>div:hover{
@@ -299,6 +401,21 @@ header{
 .watchlist-item:hover{
     cursor: pointer;
     background-color: #EEE;
+    transition: all 0.3s ease-in-out;
+}
+
+.label:hover{
+    cursor: pointer;
+    background-color: #CCC;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.pie-chart li:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    text-decoration: underline;
     transition: all 0.3s ease-in-out;
 }
 

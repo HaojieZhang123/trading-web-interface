@@ -150,6 +150,7 @@
 
                     <div class="header-title bold">Markets</div>
     
+                    <!-- header's mini watchlist -->
                     <div id="mini-watchlist" class="d-flex justify-between align-center">
                         <div class="mini-watchlist-box">
                             <div>
@@ -216,179 +217,237 @@
 
             </header>
 
-            <div class="content">
-                <!-- action graphs -->
-                <div class="action-graphs d-flex justify-between">
-    
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-header d-flex">
-    
-                            <div class="arrow green-text">
-                                <i class="fa-solid fa-arrow-up"></i>
+            <div class="main-content">
+                <div class="content">
+                    <!-- action graphs -->
+                    <div id="action-graphs" class="d-flex justify-between">
+        
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-header d-flex">
+        
+                                <div class="arrow green-text">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+        
+                                <div class="info">
+                                    <div class="name bold">All Bond Index- TR</div>
+                                    <div class="value grey-text">882.77</div>
+                                    <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
+                                </div>
+        
                             </div>
-    
-                            <div class="info">
-                                <div class="name bold">All Bond Index- TR</div>
-                                <div class="value grey-text">882.77</div>
-                                <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
+        
+                            <div class="card-body">
+                                <div class="graph d-flex align-center justify-center">
+                                    <img src="./img/graph-1.png" alt="Grapg">
+                                </div>
                             </div>
-    
                         </div>
-    
-                        <div class="card-body">
-                            <div class="graph d-flex align-center justify-center">
-                                <img src="./img/graph-1.png" alt="Grapg">
+        
+                        <!-- card -->
+                        <div class="card">
+                            <div class="card-header d-flex">
+        
+                                <div class="arrow red-text">
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                </div>
+        
+                                <div class="info">
+                                    <div class="name bold">GH Eurobond USD</div>
+                                    <div class="value grey-text">920.77</div>
+                                    <div class="fluctuation red-text">+0.0000 (+0.00%)</div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="card-body">
+                                <div class="graph d-flex align-center justify-center">
+                                    <img src="./img/graph-2.png" alt="Grapg">
+                                </div>
                             </div>
                         </div>
+        
+                        <!-- card -->
+                        <div class="card">
+                            <div class="card-header d-flex">
+        
+                                <div class="arrow red-text">
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                </div>
+        
+                                <div class="info">
+                                    <div class="name bold">GSE Composite Index</div>
+                                    <div class="value grey-text">2,920.77</div>
+                                    <div class="fluctuation red-text">+0.0000 (+0.00%)</div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="card-body">
+                                <div class="graph d-flex align-center justify-center">
+                                    <img src="./img/graph-3.png" alt="Grapg">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- card -->
+                        <div class="card">
+                            <div class="card-header d-flex">
+        
+                                <div class="arrow green-text">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+        
+                                <div class="info">
+                                    <div class="name bold">GSE Financial Index</div>
+                                    <div class="value grey-text">2,019.00</div>
+                                    <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="card-body">
+                                <div class="graph d-flex align-center justify-center">
+                                    <img src="./img/graph-4.png" alt="Grapg">
+                                </div>
+                            </div>
+                        </div>
+        
                     </div>
+                </div>
     
-                    <!-- card -->
-                    <div class="card">
-                        <div class="card-header d-flex">
-    
-                            <div class="arrow red-text">
-                                <i class="fa-solid fa-arrow-down"></i>
-                            </div>
-    
-                            <div class="info">
-                                <div class="name bold">GH Eurobond USD</div>
-                                <div class="value grey-text">920.77</div>
-                                <div class="fluctuation red-text">+0.0000 (+0.00%)</div>
-                            </div>
-    
+                <div class="content">
+                    <!-- watchlist section -->
+                    <div id="watchlist" class="d-flex align-center">
+        
+                        <div class="angle-left">
+                            <i class="fa-solid fa-angle-left"></i>
                         </div>
-    
-                        <div class="card-body">
-                            <div class="graph d-flex align-center justify-center">
-                                <img src="./img/graph-2.png" alt="Grapg">
+        
+                        <!-- Center box -->
+                        <div class="watchlist-box d-flex align-center">
+                            <!-- watchlist item -->
+                            <div class="watchlist-item d-flex">
+                                <div class="arrow green-text">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+            
+                                <div class="info">
+                                    <div class="name bold">GSE Financial Index</div>
+                                    <div class="value grey-text">2,019.00</div>
+                                    <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
+                                </div>
+                            </div>
+            
+                            <!-- watchlist item -->
+                            <div class="watchlist-item d-flex">
+                                <div class="arrow green-text">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+            
+                                <div class="info">
+                                    <div class="name bold">GSE Financial Index</div>
+                                    <div class="value grey-text">2,019.00</div>
+                                    <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
+                                </div>
+                            </div>
+            
+                            <!-- watchlist item -->
+                            <div class="watchlist-item d-flex">
+                                <div class="arrow green-text">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+            
+                                <div class="info">
+                                    <div class="name bold">GSE Financial Index</div>
+                                    <div class="value grey-text">2,019.00</div>
+                                    <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
+                                </div>
+                            </div>
+            
+                            <!-- watchlist item -->
+                            <div class="watchlist-item d-flex">
+                                <div class="arrow green-text">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+            
+                                <div class="info">
+                                    <div class="name bold">GSE Financial Index</div>
+                                    <div class="value grey-text">2,019.00</div>
+                                    <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
+                                </div>
                             </div>
                         </div>
+        
+                        <div class="angle-right">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+        
+        
                     </div>
+                </div>
+        
+                <div class="content">
+                    <div id="funds-graphs">
     
-                    <!-- card -->
-                    <div class="card">
-                        <div class="card-header d-flex">
-    
-                            <div class="arrow red-text">
-                                <i class="fa-solid fa-arrow-down"></i>
+                        <!-- Table labels selection -->
+                        <div id="labels" class="d-flex align-center grey-text">
+                            <div class="label">
+                                <span>
+                                    <i class="fa-solid fa-tower-broadcast"></i>
+                                    Live trading
+                                </span>
                             </div>
-    
-                            <div class="info">
-                                <div class="name bold">GSE Composite Index</div>
-                                <div class="value grey-text">2,920.77</div>
-                                <div class="fluctuation red-text">+0.0000 (+0.00%)</div>
+                            <div class="label selected-label">
+                                <span>GHS Bonds</span>
                             </div>
-    
+                            <div class="label">
+                                <span>Municipal Bonds</span>
+                            </div>
+                            <div class="label">
+                                <span>Corporate Bonds</span>
+                            </div>
+                            <div class="label">
+                                <span>Euro Bonds</span>
+                            </div>
+                            <div class="label">
+                                <span>Money Market</span>
+                            </div>
+                            <div class="label">
+                                <span>USD Equities</span>
+                            </div>
+                            <div class="label">
+                                <span>Alternatives</span>
+                            </div>
                         </div>
     
-                        <div class="card-body">
-                            <div class="graph d-flex align-center justify-center">
-                                <img src="./img/graph-3.png" alt="Grapg">
+                        <!-- graph section -->
+                        <div id="graphs" class="d-flex flex-wrap stretch">
+                            <div class="search-box">
+                                <input type="text" placeholder="Search">
+                            </div>
+    
+                            <div class="line-chart">
+                                <h3>Market situation (?*)</h3>
+                                <img src="./img/big-graph.jpg" alt="">
+                            </div>
+    
+                            <div class="pie-chart">
+                                <h3>Trading amount (?*)</h3>
+                                <img src="./img/pie-chart.png" alt="">
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                </ul>
                             </div>
                         </div>
+    
                     </div>
-    
-                    <!-- card -->
-                    <div class="card">
-                        <div class="card-header d-flex">
-    
-                            <div class="arrow green-text">
-                                <i class="fa-solid fa-arrow-up"></i>
-                            </div>
-    
-                            <div class="info">
-                                <div class="name bold">GSE Financial Index</div>
-                                <div class="value grey-text">2,019.00</div>
-                                <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
-                            </div>
-    
-                        </div>
-    
-                        <div class="card-body">
-                            <div class="graph d-flex align-center justify-center">
-                                <img src="./img/graph-4.png" alt="Grapg">
-                            </div>
-                        </div>
-                    </div>
-    
                 </div>
             </div>
 
-            <div class="content">
-                <!-- watchlist section -->
-                <div class="watchlist d-flex align-center">
-    
-                    <div class="angle-left">
-                        <i class="fa-solid fa-angle-left"></i>
-                    </div>
-    
-                    <!-- Center box -->
-                    <div class="watchlist-box d-flex align-center">
-                        <!-- watchlist item -->
-                        <div class="watchlist-item d-flex">
-                            <div class="arrow green-text">
-                                <i class="fa-solid fa-arrow-up"></i>
-                            </div>
-        
-                            <div class="info">
-                                <div class="name bold">GSE Financial Index</div>
-                                <div class="value grey-text">2,019.00</div>
-                                <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
-                            </div>
-                        </div>
-        
-                        <!-- watchlist item -->
-                        <div class="watchlist-item d-flex">
-                            <div class="arrow green-text">
-                                <i class="fa-solid fa-arrow-up"></i>
-                            </div>
-        
-                            <div class="info">
-                                <div class="name bold">GSE Financial Index</div>
-                                <div class="value grey-text">2,019.00</div>
-                                <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
-                            </div>
-                        </div>
-        
-                        <!-- watchlist item -->
-                        <div class="watchlist-item d-flex">
-                            <div class="arrow green-text">
-                                <i class="fa-solid fa-arrow-up"></i>
-                            </div>
-        
-                            <div class="info">
-                                <div class="name bold">GSE Financial Index</div>
-                                <div class="value grey-text">2,019.00</div>
-                                <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
-                            </div>
-                        </div>
-        
-                        <!-- watchlist item -->
-                        <div class="watchlist-item d-flex">
-                            <div class="arrow green-text">
-                                <i class="fa-solid fa-arrow-up"></i>
-                            </div>
-        
-                            <div class="info">
-                                <div class="name bold">GSE Financial Index</div>
-                                <div class="value grey-text">2,019.00</div>
-                                <div class="fluctuation green-text">+0.0000 (+0.00%)</div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="angle-right">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-    
-    
-                </div>
-            </div>
-    
-            <div class="content"></div>
-                <div class="funds-graphs"></div>
-            </div>
 
 
         </div>
