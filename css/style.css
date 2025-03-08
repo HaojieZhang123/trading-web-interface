@@ -168,17 +168,20 @@ header{
     padding-left: 5px;
 }
 
-.card{
+.card, .watchlist-item{
     width: 25%;
     padding: 10px;
 }
-.card-header .arrow{
+.card-header .arrow, .watchlist-item .arrow{
     width: 30px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
-.card-header .info{
+.card-header .info, .watchlist-item .info{
     width: 70%;
+}
+.card-header .info .value, .watchlist-item .info .value, .card-header .info .fluctuation, .watchlist-item .info .fluctuation{
+    font-size: 0.9em;
 }
 .card-body{
     width: 100%;
@@ -188,6 +191,20 @@ header{
 }
 .card-body .graph img{
     width: 80%;
+}
+
+.angle-left, .angle-right{
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+    color: #666;
+}
+.watchlist-box{
+    width: calc(100% - 100px);
+}
+
+.watchlist-item{
+    border-left: 0.5px solid #CCC;
 }
 
 
