@@ -18,22 +18,21 @@ body{
 #sidebar{
     position: fixed;
     top: 0;
+    z-index: 1;
     width: 250px;
     height: 100vh;
     background-color: white;
-    box-shadow: 0px 0px 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 #main{
     margin-left: 250px;
     width: calc(100% - 250px);
     overflow-y: auto;
-    background-color: green;
 }
 
 header{
-    height: 50px;
-    background-color: paleturquoise;
+    height: 100px;
     position: sticky;
     top: 0;
 }
@@ -79,8 +78,8 @@ header{
 /* logo */
 #logo, #small-logo{
     width: 100%;
-    height: 50px;
-    padding: 5px 0;
+    height: 100px;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,14 +105,14 @@ header{
     padding: 10px 0;
 }
 .sidebar-panel-container, .homepage-settings-container{
-    border-left: 0.5px solid black;
+    border-left: 0.5px solid #CCC;
 }
 #side-panel-list li, #homepage-settings-list li{
     display: flex;
     align-items: center;
     padding: 10px 10px;
 }
-#side-panel-list li > .panel-logo{
+#side-panel-list li > .panel-logo, #homepage-settings-list li > .home-setting-logo{
     margin-right: 10px;
 }
 
@@ -129,9 +128,6 @@ header{
     width: 50%;
     max-width: 300px;
 }
-#user-buttons{
-    width: 150px;
-}
 .header-title{
     width: 150px;
     text-align: center;
@@ -142,28 +138,58 @@ header{
     width: 100%;
 }
 
+#user-buttons{
+    width: 150px;
+}
+#user-buttons>div{
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+
+}
 /* Elements */
 .square-button{
     width: 30px;
     height: 30px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #CCC;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .mini-watchlist-box{
-    border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
     width: 100px;
     background-color: white;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 .mini-watchlist-box>div{
     border-left: 3px solid black;
     padding-left: 5px;
 }
+
+.card{
+    width: 25%;
+    padding: 10px;
+}
+.card-header .arrow{
+    width: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.card-header .info{
+    width: 70%;
+}
+.card-body{
+    width: 100%;
+}
+.card-body .graph{
+    width: 100%;
+}
+.card-body .graph img{
+    width: 80%;
+}
+
 
 /*****************************/
 /* Colors and text-formating */
@@ -177,6 +203,9 @@ header{
 
 .white-text{
     color: white;
+}
+.grey-text{
+    color: #666;
 }
 .black-text{
     color: black;
@@ -197,6 +226,11 @@ header{
 
 .bold{
     font-weight: 600;
+}
+
+.selected-button{
+    border-color: black;
+    color: black;
 }
 
 
